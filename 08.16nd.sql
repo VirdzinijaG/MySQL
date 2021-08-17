@@ -3,6 +3,6 @@
 select country.name as salis, country.Continent as zemynas, count(*)
 from country, countrylanguage
 where countrylanguage.IsOfficial = 'T' and Country.Code = countrylanguage.CountryCode
-group by CountryCode
+group by Country.Code, country.name, country.Continent
 having count(*) >= 2
 order by country.name
