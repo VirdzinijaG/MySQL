@@ -10,5 +10,8 @@
 -- insert into pardavejai (pavadinimas)
 -- values ('Barbora')
 
-insert into apmokejimo_tipai (pavadinimas)
-values ('Pavedimu')
+-- insert into apmokejimo_tipai (pavadinimas)
+-- values ('Pavedimu')
+
+insert into cekiai (data, pardavejai_id, apmokejimo_tipai_id)
+values ('2021-08-01', 1, 1)
